@@ -29,25 +29,14 @@ display:none;
 #container { 
 	position: relative; }
 #filmpje { 
-	position: fixed; left: 50%;}
+	position: fixed; left: 28%; }
 #countdown { 
-	position: absolute; left: 50px; 
-	font-family: 'Arial Black';
-	color: white;
-	font-size: 400px;
-	text-align: center;
-	
-	
+	position: absolute;
 	
 }
-
-
-
-
-
     </style>
 
-<script>setTimeout(function(){window.location.href='SAM.html'},15000);
+<script>setTimeout(function(){window.location.href='index.html'},10000);
 
 var timeInSecs;
 var ticker;
@@ -70,7 +59,7 @@ clearInterval(ticker); // stop counting at zero
 document.getElementById("countdown").innerHTML = secs;
 }
 
-startTimer(15);  // 60 seconds 
+startTimer(10);  // 60 seconds 
 }
 
 
@@ -82,38 +71,38 @@ startTimer(15);  // 60 seconds
 
 <div id="muziek">
 <audio autoplay loop>
-<source src="Brian%20Eno%20-%20An%20Ending%20(Ascent)%20%5B1080%20HD%5D%20(mp3cut.net).mp3" type="audio/mpeg">
+<source src="./assets/Brian%20Eno%20-%20An%20Ending%20(Ascent)%20%5B1080%20HD%5D%20(mp3cut.net).mp3" type="audio/mpeg">
 </audio>
 </div>
 
 <div id="stem">
 <audio id="stem" autoplay loop>
-<source src="VoicesBrazil.mp3/" type="audio/mpeg">
+<source src="./assets/VoicesBrazil.mp3/" type="audio/mpeg">
 </audio>
 </div>
 
 <div id="stem">
 <audio id="stem" autoplay>
-<source src="VoicesBrazil2.mp3/" type="audio/mpeg">
+<source src="./assets/VoicesBrazil2.mp3/" type="audio/mpeg">
 </audio>
 </div>
 
 
 <div id="stem">
 <audio id="stem" autoplay>
-<source src="VoicesBrazil3.mp3/" type="audio/mpeg">
+<source src="./assets/VoicesBrazil3.mp3/" type="audio/mpeg">
 </audio>
 </div>
 
 <div id="stem">
 <audio id="stem" autoplay>
-<source src="VoicesBrazil4.mp3/" type="audio/mpeg">
+<source src="./assets/VoicesBrazil4.mp3/" type="audio/mpeg">
 </audio>
 </div>
 
 <div id="stem">
 <audioid="stem"  autoplay>
-<source src="VoicesBrazil5.mp3/" type="audio/mpeg">
+<source src="./assets/VoicesBrazil5.mp3/" type="audio/mpeg">
 </audio>
 </div>
 
@@ -122,19 +111,19 @@ startTimer(15);  // 60 seconds
 
 <div id="muziek">
 <audio autoplay>
-<source src="Guided%20Meditation%20-%20Blissful%20Deep%20Relaxation.mp3/" type="audio/mpeg">
+<source src="./assets/Guided%20Meditation%20-%20Blissful%20Deep%20Relaxation.mp3/" type="audio/mpeg">
 </audio>
 </div>
 
-<a href="SAM.html" class="button">Wake up</a>
+<a href="index.html" class="button">Wake up</a>
 
 <div class="container">
 	<div id="filmpje">
-	<video width="425" height="345" autoplay>
-	<source src="meditatie.mp4" type="video/mp4">
+	<video width="625" height="545" autoplay>
+	<source src="./assets/meditatie.mp4" type="video/mp4">
 	</video></div>
 	
-	<div id="countdown" align="right"><span id="countdown" style="font-weight: lighter; font-family: 'Arial Black'; color: white; font-size: 800px;">15</span>	</div>
+	<div id="countdown"><img src="./assets/countdown.gif"></div>
 </div>
                                            
 
