@@ -29,38 +29,15 @@ display:none;
 #container { 
 	position: relative; }
 #filmpje { 
-	position: fixed; left: 28%; }
+	position: fixed; left: 28%; top:17%; }
 #countdown { 
 	position: absolute;
+	min-width: 100%;
 	
 }
     </style>
 
 <script>setTimeout(function(){window.location.href='index.html'},10000);
-
-var timeInSecs;
-var ticker;
-
-function startTimer(secs){
-timeInSecs = parseInt(secs)-1;
-ticker = setInterval("tick()",1000);   // every second
-}
-
-function tick() {
-var secs = timeInSecs;
-if (secs>0) {
-timeInSecs--;
-}
-else {
-clearInterval(ticker); // stop counting at zero
-// startTimer(60);  // remove forward slashes in front of startTimer to repeat if required
-}
-
-document.getElementById("countdown").innerHTML = secs;
-}
-
-startTimer(10);  // 60 seconds 
-}
 
 
 
@@ -71,43 +48,34 @@ startTimer(10);  // 60 seconds
 
 <div id="muziek">
 <audio autoplay loop>
-<source src="./assets/Brian%20Eno%20-%20An%20Ending%20(Ascent)%20%5B1080%20HD%5D%20(mp3cut.net).mp3" type="audio/mpeg">
+<source src="./assets/zen.mp3" type="audio/mpeg">
 </audio>
 </div>
 
 <div id="stem">
 <audio id="stem" autoplay loop>
-<source src="./assets/VoicesBrazil.mp3/" type="audio/mpeg">
+<source src="./assets/VoicesBrazil(2).mp3/" type="audio/mpeg">
 </audio>
 </div>
 
 <div id="stem">
 <audio id="stem" autoplay>
-<source src="./assets/VoicesBrazil2.mp3/" type="audio/mpeg">
+<source src="./assets/VoicesBrazil2(2).mp3/" type="audio/mpeg">
 </audio>
 </div>
 
 
 <div id="stem">
 <audio id="stem" autoplay>
-<source src="./assets/VoicesBrazil3.mp3/" type="audio/mpeg">
+<source src="./assets/VoicesBrazil3(2).mp3/" type="audio/mpeg">
 </audio>
 </div>
 
 <div id="stem">
 <audio id="stem" autoplay>
-<source src="./assets/VoicesBrazil4.mp3/" type="audio/mpeg">
+<source src="./assets/VoicesBrazil4(2).mp3/" type="audio/mpeg">
 </audio>
 </div>
-
-<div id="stem">
-<audioid="stem"  autoplay>
-<source src="./assets/VoicesBrazil5.mp3/" type="audio/mpeg">
-</audio>
-</div>
-
-
-
 
 <div id="muziek">
 <audio autoplay>

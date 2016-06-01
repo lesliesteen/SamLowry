@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
+	  <title>Sam Lowry</title>
+	  <script src="jquery-1.12.4.min.js"></script>
+	  
 <style>
 	
 body {
@@ -8,6 +11,7 @@ background-image:url(./assets/Background3.gif);
 background-size: cover;
     width: 100%;
     height: 100%;
+    overflow: hidden;
    
  }   
     
@@ -28,21 +32,10 @@ background-size: cover;
 }
 
 #dream{
-	position: fixed;
-	bottom: 85%;
-	right: 85%;
-}	
-
-#dream2{
-	position: fixed;
-	bottom: 5%;
-	right: 50%;
-}	
-	
-#dream3{
-	position: fixed;
-	bottom: 30%;
-	right: 25%;
+	position: absolute;
+	width: 300px;
+	height: 100px;
+	z-index: 30000000000000;
 }	
 
 
@@ -55,13 +48,10 @@ background-size: cover;
 	border:1px solid black;
 	padding: 10px;
 	background: aqua;
-	font-family: "Helvetica";
+	font-family: "Avenir";
 	font-size: 26px;
 	opacity: 0.6;
-	
-
-
-	
+	line-height: 23px;
  }
  
  #pop2{
@@ -69,44 +59,16 @@ background-size: cover;
 	width: 300px;
 	position: fixed;
 	bottom: 30%;
-	right: 18%;
+	right: -20%;
 	border:1px solid black;
 	padding: 10px;
 	background: yellow;
 	font-family: "Arial Black";
 	font-size: 52px;
 	opacity: 0.6;
-	-webkit-animation-name: spinnerRotate;
-    -webkit-animation-duration: 5s;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-timing-function: linear;
-    -moz-animation-name: s;
-    -moz-animation-duration: 5s;
-    -moz-animation-iteration-count: infinite;
-    -moz-animation-timing-function: linear;
-    -ms-animation-name: spinnerRotate;
-    -ms-animation-duration: 5s;
-    -ms-animation-iteration-count: infinite;
-    -ms-animation-timing-function: linear;
+	line-height: 49px;
+	}
 	
- }
- 
-  @-webkit-keyframes spinnerRotate
-{
-    from{-webkit-transform:rotate(0deg);}
-    to{-webkit-transform:rotate(360deg);}
-}
-@-moz-keyframes spinnerRotate
-{
-    from{-moz-transform:rotate(0deg);}
-    to{-moz-transform:rotate(360deg);}
-}
-@-ms-keyframes spinnerRotate
-{
-    from{-ms-transform:rotate(0deg);}
-    to{-ms-transform:rotate(360deg);}
-}
-
   #pop3{
 	height: 180px;
 	width: 200px;
@@ -115,11 +77,12 @@ background-size: cover;
 	right: 30%;
 	border:1px solid black;
 	padding: 10px;
-	background: #2cff00;
-	font-family: "Times New Roman";
+	background: blue;
+	font-family: "Baskerville";
 	font-size: 52px;
 	opacity: 0.6;
-	color: purple;
+	color: blue;
+	line-height: 49px;
 	-webkit-animation-name: travel2;
     -webkit-animation-timing-function: linear;
     -webkit-animation-iteration-count: infinite;
@@ -160,18 +123,18 @@ background-size: cover;
     to   { left: 1400px; }
   }
   
- }
+
  
   #pop4{
   height: 700px;
   width: 900px;
   position: fixed;
-	bottom: 20%;
+	bottom: -20%;
 	right: 30%;
 	border:1px solid black;
 	padding: 10px;
-	background: yellow;
-	font-family: "Bandy";
+	background: aqua;
+	font-family: "Impact";
 	font-size: 120px;
 	opacity: 0.6;
 	
@@ -185,6 +148,7 @@ background-size: cover;
 	right: 40%;
 	font-family: "Baskerville";
 	font-size: 72px;
+	line-height: 69px;
 		font-style: italic;
 		
 		color: yellow;
@@ -197,14 +161,15 @@ background-size: cover;
 	height: 234px;
 	width: 134px;
 	position: fixed;
-	bottom: 13%;
+	bottom: -5%;
 	right: 60%;
 	border:1px solid black;
 	padding: 10px;
 	background: blue;
-	font-family: "Perpetua";
+	font-family: "Gabriola";
 	font-size: 52px;
 	opacity: 0.6;
+	line-height: 49px;
 
 
 }
@@ -215,41 +180,29 @@ background-size: cover;
 	width: 190px;
 	position: fixed;
 	bottom: 50%;
-	right: 20%;
+	right: -20%;
 	border:1px solid black;
 	padding: 10px;
-	background: -webkit-linear-gradient(#3cff06 0%, #ffffff 100%);
-	font-family: "Bombardier";
+	background: -webkit-linear-gradient(#FF00FF 0%, #0000FF 100%);
+	font-family: "Deutsch Gothic";
 	font-size: 82px;
 	opacity: 0.6;
-	-webkit-animation-name: spinnerRotate;
-    -webkit-animation-duration: 5s;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-timing-function: linear;
-    -moz-animation-name: s;
-    -moz-animation-duration: 5s;
-    -moz-animation-iteration-count: infinite;
-    -moz-animation-timing-function: linear;
-    -ms-animation-name: spinnerRotate;
-    -ms-animation-duration: 5s;
-    -ms-animation-iteration-count: infinite;
-    -ms-animation-timing-function: linear;
-
-
+	line-height: 79px;
  }
 
  #pop8{
 	height: 180px;
 	width: 200px;
 	position: fixed;
-	bottom: 20%;
+	bottom: -10%;
 	right: 90%;
 	border:1px solid black;
 	padding: 10px;
-	background: olive;
-	font-family: "Cornfed";
+	background: lime;
+	font-family: "Arial Black";
 	font-size: 52px;
 	opacity: 0.6;
+	line-height: 49px;
 
 
  }
@@ -259,11 +212,11 @@ background-size: cover;
 	width: 429px;
 	line-height: 57px;
 	position: fixed;
-	bottom: 10%;
-	right: 60%;
+	bottom: -14%;
+	right: 20%;
 	border:1px solid black;
 	padding: 10px;
-	background: teal;
+	background: fuchsia;
 	font-family: "Impact";
 	font-size: 60px;
 	opacity: 0.6;
@@ -281,8 +234,9 @@ background-size: cover;
 	border:1px solid black;
 	padding: 10px;
 	background: lime;
-	font-family: "Comic Sans MS";
+	font-family: "Avenir";
 	font-size: 28px;
+	line-height: 24px;
 	opacity: 0.6;
 		-webkit-animation-name: travel;
     -webkit-animation-timing-function: linear;
@@ -297,7 +251,7 @@ background-size: cover;
     animation-duration: 2.8s;
   }
 
- }
+
  
    #pop11{
 	height: 500px;
@@ -307,10 +261,11 @@ background-size: cover;
 	right: 23%;
 	border:1px solid white;
 	padding: 10px;
-	background: -webkit-linear-gradient(#1b00ff 0%, #ffffff 100%);
-	font-family: "Copperplate";
+	background: -webkit-linear-gradient(#00FF00	 0%, #0000FF 100%);
+	font-family: "Baskerville";
 	font-size: 38px;
 	opacity: 0.6;
+	line-height: 35px;
 
 
  }
@@ -323,8 +278,8 @@ background-size: cover;
 	right: 36%;
 	border:1px solid black;
 	padding: 10px;
-	background: maroon;
-	font-family: "Courier";
+	background: lime;
+	font-family: "Impact";
 	font-size: 36px;
 	opacity: 0.6;
 
@@ -336,13 +291,14 @@ background-size: cover;
 	width: 350px;
 	line-height: 70px;
 	position: fixed;
-	bottom: 5%;
+	bottom: 1%;
 	right: 25%;
 	border:1px solid black;
 	padding: 10px;
-	background: -webkit-linear-gradient(#ff8d00 0%, #ffffff 100%);
+	background: -webkit-linear-gradient(#FFFF00 0%, #0000FF 100%);
 	font-family: "Gabriola";
 	font-size: 72px;
+	line-height: 69px;
 	opacity: 0.6;
 
 
@@ -350,11 +306,12 @@ background-size: cover;
  
    #pop14{
 	bottom: 34%;
-	right: 34%;
+	right: -34%;
 	font-family: "Deutsch Gothic";
 	font-size: 120px;
+	line-height: 117px;
 	color: blue;
-	position: fixed
+	position: fixed;
 	-webkit-animation-name: travel2;
     -webkit-animation-timing-function: linear;
     -webkit-animation-iteration-count: infinite;
@@ -376,9 +333,10 @@ background-size: cover;
 	right: 48%;
 	border:1px solid black;
 	padding: 10px;
-	background: #8333ec;
+	background: aqua;
 	font-family: "Avenir";
 	font-size: 43px;
+	line-height: 40px;
 	opacity: 0.6;
 
 
@@ -392,9 +350,10 @@ background-size: cover;
 	right: 20%;
 	border:1px solid black;
 	padding: 10px;
-	background: aqua;
-	font-family: "Droidiga";
+	background: blue;
+	font-family: "Arial Black";
 	font-size: 26px;
+	line-height: 23px;
 	opacity: 0.6;
 		-webkit-animation-name: travel;
     -webkit-animation-timing-function: linear;
@@ -410,8 +369,7 @@ background-size: cover;
   }
 
 	
- }
- 
+
  #pop17{
 	height: 230px;
 	width: 300px;
@@ -423,6 +381,7 @@ background-size: cover;
 	background: fuchsia;
 	font-family: "Arial Black";
 	font-size: 52px;
+	line-height: 49px;
 	opacity: 0.6;
 
 	
@@ -437,25 +396,11 @@ background-size: cover;
 	right: 46%;
 	border:1px solid black;
 	padding: 10px;
-	background: #2cff00;
-	font-family: "Edit Undo BRK";
+	background: yellow;
+	font-family: "Baskerville";
 	font-size: 52px;
+	line-height: 49px;
 	opacity: 0.6;
-	-webkit-animation-name: spinnerRotate;
-    -webkit-animation-duration: 5s;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-timing-function: linear;
-    -moz-animation-name: s;
-    -moz-animation-duration: 5s;
-    -moz-animation-iteration-count: infinite;
-    -moz-animation-timing-function: linear;
-    -ms-animation-name: spinnerRotate;
-    -ms-animation-duration: 5s;
-    -ms-animation-iteration-count: infinite;
-    -ms-animation-timing-function: linear;
-
-
-
  }
  
   #pop19{
@@ -467,8 +412,9 @@ background-size: cover;
 	border:1px solid black;
 	padding: 10px;
 	background: yellow;
-	font-family: "Helvetica";
+	font-family: "Avenir";
 	font-size: 32px;
+	line-height: 29px;
 	opacity: 0.6;
 
  }
@@ -482,9 +428,10 @@ background-size: cover;
 	right: 58%;
 	border:1px solid black;
 	padding: 10px;
-	background: #ff0202;
+	background: lime;
 	font-family: "Baskerville";
 	font-size: 25px;
+	line-height: 22px;
 		font-style: italic;
 		opacity: 0.6;
 
@@ -500,8 +447,9 @@ background-size: cover;
 	border:1px solid black;
 	padding: 10px;
 	background: blue;
-	font-family: "Goudy Old Style";
+	font-family: "Avenir";
 	font-size: 52px;
+	line-height: 49px;
 	opacity: 0.6;
 
 
@@ -511,12 +459,12 @@ background-size: cover;
 	height: 300px;
 	width: 190px;
 	position: fixed;
-	bottom: 10%;
+	bottom: 57%;
 	right: 90%;
 	border:1px solid black;
 	padding: 10px;
-	background: -webkit-linear-gradient(#3cff06 0%, #ffffff 100%);
-	font-family: "Gill Sans";
+	background: -webkit-linear-gradient(#FF00FF 0%, #0000FF 100%);
+	font-family: "Impact";
 	font-size: 12px;
 	opacity: 0.6;
 		-webkit-animation-name: travel;
@@ -532,7 +480,7 @@ background-size: cover;
     animation-duration: 1s;
   }
 
- }
+
 
  #pop23{
 	height: 350px;
@@ -540,12 +488,13 @@ background-size: cover;
 	position: fixed;
 	line-height: 66px;
 	bottom: 85%;
-	right: 10%;
+	right: -14%;
 	border:1px solid black;
 	padding: 10px;
-	background: olive;
-	font-family: "Motlow Caps";
+	background: blue;
+	font-family: "Baskerville";
 	font-size: 67px;
+	line-height: 64px;
 	opacity: 0.6;
 
 
@@ -559,23 +508,11 @@ background-size: cover;
 	right: 78%;
 	border:1px solid black;
 	padding: 10px;
-	background: teal;
-	font-family: "Profundum";
+	background: aqua;
+	font-family: "Deutsch Gothic";
 	font-size: 52px;
+	line-height: 49px;
 	opacity: 0.6;
-	-webkit-animation-name: spinnerRotate;
-    -webkit-animation-duration: 5s;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-timing-function: linear;
-    -moz-animation-name: s;
-    -moz-animation-duration: 5s;
-    -moz-animation-iteration-count: infinite;
-    -moz-animation-timing-function: linear;
-    -ms-animation-name: spinnerRotate;
-    -ms-animation-duration: 5s;
-    -ms-animation-iteration-count: infinite;
-    -ms-animation-timing-function: linear;
-
 
  }
 
@@ -588,8 +525,9 @@ background-size: cover;
 	border:1px solid black;
 	padding: 10px;
 	background: lime;
-	font-family: "Comic Sans MS";
+	font-family: "Gabriola";
 	font-size: 18px;
+	line-height: 15px;
 	opacity: 0.6;
 
 
@@ -603,9 +541,10 @@ background-size: cover;
 	right: 24%;
 	border:1px solid white;
 	padding: 10px;
-	background: -webkit-linear-gradient(#1b00ff 0%, #ffffff 100%);
-	font-family: "Roman Antique";
+	background: -webkit-linear-gradient(#00FF00 0%, #FF00FF 100%);
+	font-family: "Arial Black";
 	font-size: 38px;
+	line-height: 35px;
 	opacity: 0.6;
 	
 
@@ -619,9 +558,10 @@ background-size: cover;
 	right: 48%;
 	border:1px solid black;
 	padding: 10px;
-	background: maroon;
-	font-family: "Windsor";
+	background: lime;
+	font-family: "Avenir";
 	font-size: 36px;
+	line-height: 33px;
 	opacity: 0.6;
 
 
@@ -632,13 +572,14 @@ background-size: cover;
 	width: 350px;
 	line-height: 70px;
 	position: fixed;
-	bottom: 4%;
+	bottom: -9%;
 	right: 59%;
 	border:1px solid black;
 	padding: 10px;
-	background: -webkit-linear-gradient(#ff8d00 0%, #ffffff 100%);
-	font-family: "Xenotron";
+	background: -webkit-linear-gradient(#FF00FF 0%, #0000FF 100%);
+	font-family: "Baskerville";
 	font-size: 72px;
+	line-height: 69px;
 	opacity: 0.6;
 		-webkit-animation-name: travel;
     -webkit-animation-timing-function: linear;
@@ -653,7 +594,7 @@ background-size: cover;
     animation-duration: 30.8s;
   }
 
- }
+
  
    #pop29{
 	height: 100px;
@@ -664,7 +605,7 @@ background-size: cover;
 	border:1px solid black;
 	padding: 10px;
 	background: blue;
-	font-family: "Rockwell";
+	font-family: "Impact";
 	font-size: 23px;
 	opacity: 0.6;
 
@@ -675,13 +616,14 @@ background-size: cover;
 	height: 250px;
 	width: 350px;
 	position: fixed;
-	bottom: 7%;
-	right: 67%;
+	bottom:-5%;
+	right: 85%;
 	border:1px solid black;
 	padding: 10px;
-	background: #8333ec;
-	font-family: "Ams Trame Regular";
+	background: lime;
+	font-family: "Gabriola";
 	font-size: 43px;
+	line-height: 40px;
 	opacity: 0.6;
 
 
@@ -696,8 +638,9 @@ background-size: cover;
 	border:1px solid black;
 	padding: 10px;
 	background: aqua;
-	font-family: "Helvetica";
+	font-family: "Avenir";
 	font-size: 26px;
+	line-height: 23px;
 	opacity: 0.6;
 	-webkit-animation-name: shake;
 	-webkit-animation-duration: 10s; 
@@ -706,7 +649,7 @@ background-size: cover;
     animation-fill-mode: both;
          }
          
-         @-webkit-keyframes shake {
+@-webkit-keyframes shake {
             0%, 100% {-webkit-transform: translateX(0);} 
             10%, 30%, 50%, 70%, 90% {-webkit-transform: translateX(-5px);} 
             20%, 40%, 60%, 80% {-webkit-transform: translateX(5px);} 
@@ -730,12 +673,13 @@ background-size: cover;
 	width: 300px;
 	position: fixed;
 	bottom: 67%;
-	right: 15%;
+	right: 1%;
 	border:1px solid black;
 	padding: 10px;
 	background: fuchsia;
 	font-family: "Arial Black";
 	font-size: 52px;
+	line-height: 49px;
 	opacity: 0.6;
 
 	
@@ -749,26 +693,12 @@ background-size: cover;
 	right: 85%;
 	border:1px solid black;
 	padding: 10px;
-	background: #2cff00;
-	font-family: "Times New Roman";
+	background: blue;
+	font-family: "Baskerville";
 	font-size: 52px;
+	line-height: 49px;
 	opacity: 0.6;
 	color: purple;
-	-webkit-animation-name: spinnerRotate;
-    -webkit-animation-duration: 5s;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-timing-function: linear;
-    -moz-animation-name: s;
-    -moz-animation-duration: 5s;
-    -moz-animation-iteration-count: infinite;
-    -moz-animation-timing-function: linear;
-    -ms-animation-name: spinnerRotate;
-    -ms-animation-duration: 5s;
-    -ms-animation-iteration-count: infinite;
-    -ms-animation-timing-function: linear;
-
-
-
  }
  
   #pop34{
@@ -780,21 +710,10 @@ background-size: cover;
 	border:1px solid black;
 	padding: 10px;
 	background: yellow;
-	font-family: "Bandy";
+	font-family: "Deutsch Gothic";
 	font-size: 120px;
+	line-height: 117px;
 	opacity: 0.6;
-	-webkit-animation-name: spinnerRotate;
-    -webkit-animation-duration: 5s;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-timing-function: linear;
-    -moz-animation-name: s;
-    -moz-animation-duration: 5s;
-    -moz-animation-iteration-count: infinite;
-    -moz-animation-timing-function: linear;
-    -ms-animation-name: spinnerRotate;
-    -ms-animation-duration: 5s;
-    -ms-animation-iteration-count: infinite;
-    -ms-animation-timing-function: linear;
 
  }
  
@@ -805,22 +724,10 @@ background-size: cover;
 	right: 21%;
 	font-family: "Baskerville";
 	font-size: 72px;
+	line-height: 69px;
 		font-style: italic;
 		
-		color: yellow;
-		-webkit-animation-name: spinnerRotate;
-    -webkit-animation-duration: 5s;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-timing-function: linear;
-    -moz-animation-name: s;
-    -moz-animation-duration: 5s;
-    -moz-animation-iteration-count: infinite;
-    -moz-animation-timing-function: linear;
-    -ms-animation-name: spinnerRotate;
-    -ms-animation-duration: 5s;
-    -ms-animation-iteration-count: infinite;
-    -ms-animation-timing-function: linear;
-
+		color: lime;
  }
  
  #pop36{
@@ -832,8 +739,9 @@ background-size: cover;
 	border:1px solid black;
 	padding: 10px;
 	background: blue;
-	font-family: "Perpetua";
+	font-family: "Arial Black";
 	font-size: 52px;
+	line-height: 49px;
 	opacity: 0.6;
 	-webkit-animation-name: travel3;
     -webkit-animation-timing-function: linear;
@@ -850,18 +758,18 @@ background-size: cover;
 
 	
 
- }
+
  
  #pop37{
 	height: 90px;
 	width: 190px;
 	position: fixed;
 	bottom: 52%;
-	right: 75%;
+	right: -120px;
 	border:1px solid black;
 	padding: 10px;
-	background: -webkit-linear-gradient(#3cff06 0%, #ffffff 100%);
-	font-family: "Bombardier";
+	background: -webkit-linear-gradient(#0000FF 0%, #FF00FF 100%);
+	font-family: "Impact";
 	font-size: 82px;
 	opacity: 0.6;
 
@@ -876,9 +784,10 @@ background-size: cover;
 	right: 23%;
 	border:1px solid black;
 	padding: 10px;
-	background: olive;
-	font-family: "Cornfed";
+	background: lime;
+	font-family: "Avenir";
 	font-size: 52px;
+	line-height: 49px;
 	opacity: 0.6;
 
 
@@ -893,7 +802,7 @@ background-size: cover;
 	right: 16%;
 	border:1px solid black;
 	padding: 10px;
-	background: teal;
+	background: lime;
 	font-family: "Impact";
 	font-size: 60px;
 	opacity: 0.6;
@@ -910,9 +819,10 @@ background-size: cover;
 	right: 47%;
 	border:1px solid black;
 	padding: 10px;
-	background: lime;
-	font-family: "Comic Sans MS";
+	background: blue;
+	font-family: "Baskerville";
 	font-size: 28px;
+	line-height: 25px;
 	opacity: 0.6;
 		-webkit-animation-name: travel;
     -webkit-animation-timing-function: linear;
@@ -927,7 +837,7 @@ background-size: cover;
     animation-duration: 7.8s;
   }
 
- }
+
  
    #pop41{
 	height: 500px;
@@ -937,9 +847,10 @@ background-size: cover;
 	right: 59%;
 	border:1px solid white;
 	padding: 10px;
-	background: -webkit-linear-gradient(#1b00ff 0%, #ffffff 100%);
-	font-family: "Copperplate";
+	background: -webkit-linear-gradient(#FF00FF 0%, #0000FF 100%);
+	font-family: "Arial Black";
 	font-size: 38px;
+	line-height: 35px;
 	opacity: 0.6;
 
 
@@ -954,9 +865,10 @@ background-size: cover;
 	right: 67%;
 	border:1px solid black;
 	padding: 10px;
-	background: -webkit-linear-gradient(#ff8d00 0%, #ffffff 100%);
+	background: -webkit-linear-gradient(#FFFF00 0%, #0000FF 100%);
 	font-family: "Gabriola";
 	font-size: 72px;
+	line-height: 69px;
 	opacity: 0.6;
 
 
@@ -967,6 +879,7 @@ background-size: cover;
 	right: 16%;
 	font-family: "Deutsch Gothic";
 	font-size: 120px;
+	line-height: 117px;
 	color: blue;
 	position: fixed
 
@@ -981,9 +894,10 @@ background-size: cover;
 	right: 10%;
 	border:1px solid black;
 	padding: 10px;
-	background: #8333ec;
+	background: yellow;
 	font-family: "Avenir";
 	font-size: 43px;
+	line-height: 40px;
 	opacity: 0.6;
 
 
@@ -998,24 +912,10 @@ background-size: cover;
 	border:1px solid black;
 	padding: 10px;
 	background: aqua;
-	font-family: "Droidiga";
+	font-family: "Impact";
 	font-size: 26px;
-	opacity: 0.6;
-	-webkit-animation-name: spinnerRotate;
-    -webkit-animation-duration: 5s;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-timing-function: linear;
-    -moz-animation-name: s;
-    -moz-animation-duration: 5s;
-    -moz-animation-iteration-count: infinite;
-    -moz-animation-timing-function: linear;
-    -ms-animation-name: spinnerRotate;
-    -ms-animation-duration: 5s;
-    -ms-animation-iteration-count: infinite;
-    -ms-animation-timing-function: linear;
-
-
-	
+	line-height: 23px;
+	opacity: 0.6;	
  }
  
  #pop46{
@@ -1029,6 +929,7 @@ background-size: cover;
 	background: fuchsia;
 	font-family: "Arial Black";
 	font-size: 52px;
+	line-height: 49px;
 	opacity: 0.6;
 
 	
@@ -1043,9 +944,10 @@ background-size: cover;
 	right: 39%;
 	border:1px solid black;
 	padding: 10px;
-	background: #2cff00;
-	font-family: "Edit Undo BRK";
+	background: lime;
+	font-family: "Avenir";
 	font-size: 52px;
+	line-height: 49px;
 	opacity: 0.6;
 
 
@@ -1061,8 +963,9 @@ background-size: cover;
 	border:1px solid black;
 	padding: 10px;
 	background: yellow;
-	font-family: "Helvetica";
+	font-family: "Gabriola";
 	font-size: 32px;
+	line-height: 29px;
 	opacity: 0.6;
 		-webkit-animation-name: travel;
     -webkit-animation-timing-function: linear;
@@ -1076,7 +979,7 @@ background-size: cover;
     animation-direction: alternate;
     animation-duration: 3s;
   }
- }
+
  
  
 #pop49{
@@ -1087,9 +990,10 @@ background-size: cover;
 	right: 14%;
 	border:1px solid black;
 	padding: 10px;
-	background: #ff0202;
+	background: aqua;
 	font-family: "Baskerville";
 	font-size: 25px;
+	line-height: 22px;
 		font-style: italic;
 		opacity: 0.6;
 
@@ -1105,8 +1009,9 @@ background-size: cover;
 	border:1px solid black;
 	padding: 10px;
 	background: blue;
-	font-family: "Goudy Old Style";
+	font-family: "Arial Black";
 	font-size: 52px;
+	line-height: 49px;
 	opacity: 0.6;
 
 
@@ -1117,12 +1022,13 @@ background-size: cover;
 	width: 190px;
 	position: fixed;
 	bottom: 53%;
-	right: 14%;
+	right: -10%;
 	border:1px solid black;
 	padding: 10px;
-	background: -webkit-linear-gradient(#3cff06 0%, #ffffff 100%);
-	font-family: "Gill Sans";
+	background: -webkit-linear-gradient(#00FFFF	 0%, #FFFF00 100%);
+	font-family: "Baskerville";
 	font-size: 12px;
+	line-height: 9px;
 	opacity: 0.6;
 
 
@@ -1137,24 +1043,11 @@ background-size: cover;
 	right: 29%;
 	border:1px solid black;
 	padding: 10px;
-	background: olive;
-	font-family: "Motlow Caps";
+	background: blue;
+	font-family: "Avenir";
 	font-size: 67px;
+	line-height: 64px;
 	opacity: 0.6;
-	-webkit-animation-name: spinnerRotate;
-    -webkit-animation-duration: 5s;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-timing-function: linear;
-    -moz-animation-name: s;
-    -moz-animation-duration: 5s;
-    -moz-animation-iteration-count: infinite;
-    -moz-animation-timing-function: linear;
-    -ms-animation-name: spinnerRotate;
-    -ms-animation-duration: 5s;
-    -ms-animation-iteration-count: infinite;
-    -ms-animation-timing-function: linear;
-
-
  }
  
  #pop53{
@@ -1165,9 +1058,10 @@ background-size: cover;
 	right: 57%;
 	border:1px solid black;
 	padding: 10px;
-	background: teal;
-	font-family: "Profundum";
+	background: yellow;
+	font-family: "Gabriola";
 	font-size: 52px;
+	line-height: 49px;
 	opacity: 0.6;
 	-webkit-animation-name: travel2;
     -webkit-animation-timing-function: linear;
@@ -1192,8 +1086,9 @@ background-size: cover;
 	border:1px solid black;
 	padding: 10px;
 	background: lime;
-	font-family: "Comic Sans MS";
+	font-family: "Deutsch Gothic";
 	font-size: 18px;
+	line-height: 15px;
 	opacity: 0.6;
 
 
@@ -1207,9 +1102,10 @@ background-size: cover;
 	right: 63%;
 	border:1px solid white;
 	padding: 10px;
-	background: -webkit-linear-gradient(#1b00ff 0%, #ffffff 100%);
-	font-family: "Roman Antique";
+	background: -webkit-linear-gradient(#FF00FF 0%, #0000FF 100%);
+	font-family: "Baskerville";
 	font-size: 38px;
+	line-height: 35px;
 	opacity: 0.6;
 
 
@@ -1223,8 +1119,8 @@ background-size: cover;
 	right: 92%;
 	border:1px solid black;
 	padding: 10px;
-	background: maroon;
-	font-family: "Windsor";
+	background: blue;
+	font-family: "Impact";
 	font-size: 36px;
 	opacity: 0.6;
 
@@ -1240,9 +1136,10 @@ background-size: cover;
 	right: 23%;
 	border:1px solid black;
 	padding: 10px;
-	background: -webkit-linear-gradient(#ff8d00 0%, #ffffff 100%);
-	font-family: "Xenotron";
+	background: -webkit-linear-gradient(#FFFF00 0%, #0000FF 100%);
+	font-family: "Baskerville";
 	font-size: 72px;
+	line-height: 69px;
 	opacity: 0.6;
 
 
@@ -1257,8 +1154,9 @@ background-size: cover;
 	border:1px solid black;
 	padding: 10px;
 	background: blue;
-	font-family: "Rockwell";
+	font-family: "Gabriola";
 	font-size: 23px;
+	line-height: 20px;
 	opacity: 0.6;
 
 
@@ -1272,9 +1170,10 @@ background-size: cover;
 	right: 12%;
 	border:1px solid black;
 	padding: 10px;
-	background: #8333ec;
-	font-family: "Ams Trame Regular";
+	background: yellow;
+	font-family: "Avenir";
 	font-size: 43px;
+	line-height: 40px;
 	opacity: 0.6;
 	-webkit-animation-name: travel3;
     -webkit-animation-timing-function: linear;
@@ -1299,8 +1198,9 @@ background-size: cover;
 	border:1px solid black;
 	padding: 10px;
 	background: aqua;
-	font-family: "Helvetica";
+	font-family: "Avenir";
 	font-size: 26px;
+	line-height: 23px;
 	opacity: 0.6;
 		-webkit-animation-name: travel;
     -webkit-animation-timing-function: linear;
@@ -1315,7 +1215,7 @@ background-size: cover;
     animation-duration: 2s;
   }
 	
- }
+
  
  #pop61{
 	height: 230px;
@@ -1328,6 +1228,7 @@ background-size: cover;
 	background: fuchsia;
 	font-family: "Arial Black";
 	font-size: 52px;
+	line-height: 49px;
 	opacity: 0.6;
 
 	
@@ -1341,28 +1242,30 @@ background-size: cover;
 	right: 66%;
 	border:1px solid black;
 	padding: 10px;
-	background: #2cff00;
-	font-family: "Times New Roman";
+	background: lime;
+	font-family: "Baskerville";
 	font-size: 52px;
+	line-height: 49px;
 	opacity: 0.6;
-	color: purple;
-	-webkit-animation-name: spinnerRotate;
-    -webkit-animation-duration: 5s;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-timing-function: linear;
-    -moz-animation-name: s;
-    -moz-animation-duration: 5s;
-    -moz-animation-iteration-count: infinite;
-    -moz-animation-timing-function: linear;
-    -ms-animation-name: spinnerRotate;
-    -ms-animation-duration: 5s;
-    -ms-animation-iteration-count: infinite;
-    -ms-animation-timing-function: linear;
-
-
-
+	color: aqua;
  }
 
+ #pop63{
+	height: 230px;
+	width: 300px;
+	position: fixed;
+	bottom: 44%;
+	right: 44%;
+	border:1px solid black;
+	padding: 10px;
+	background: fuchsia;
+	font-family: "Arial Black";
+	font-size: 52px;
+	line-height: 49px;
+	opacity: 0.6;
+
+	
+ }
 
 
  #pop1a{
@@ -1427,9 +1330,8 @@ background-size: cover;
  
  #pophoofd{
 	position: fixed;
-	bottom: 37%;
-	right: 60%;
-	opacity: 0.8; 
+	bottom: 60%;
+	right: 60%; 
 
 
  }
@@ -1445,8 +1347,8 @@ background-size: cover;
  
  #rainbow{
 	position: fixed;
-	bottom: 34%;
-	right: 50%;
+	bottom: 86%;
+	right: 10%;
 	opacity: 0.6; 
 
 
@@ -1454,7 +1356,7 @@ background-size: cover;
 
 #shark{
 	position: fixed;
-	bottom: 50%;
+	bottom: 40%;
 	right: 50%;
 	opacity: 0.8; 
 
@@ -1466,6 +1368,13 @@ background-size: cover;
 	bottom: 5%;
 	right: 5%;
 	opacity: 0.8; 
+ }
+
+#palmboom{
+	position: fixed;
+	bottom: 20%;
+	right: 5%;
+	opacity: 0.7; 
 
 
  }
@@ -1479,121 +1388,78 @@ background-size: cover;
 	
  }
 
+.greydout {
+  -webkit-opacity: 0;
+  -moz-opacity: 0;
+  opacity: 0; 
+}
+
+.greydout:hover {
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  opacity: 1;
+}
+
+#img{
+	position: fixed;
+	right: 30%;
+	bottom: 30%;
+}
+
+#img2{
+	position: fixed;
+	right: 69%;
+	bottom: 12%;
+}
+
+#img3{
+	position: fixed;
+	right: 24%;
+	bottom: 67%;
+}
+
+#img4{
+	position: fixed;
+	right: 50%;
+	bottom: 45%;
+}
+
+
+
+#banner1{
+	position: fixed;
+	background-color: blue;
+	font-family: Impact;
+	font-size: 70px;
+	width: 100%;
+	opacity: 0.7;
+}	
+
+#banner2{
+	position: fixed;
+	right: 32%;
+	line-height: 47px;
+	color: aqua;
+	font-family: 'Avenir';
+	font-size: 50px;
+	height:  100%;
+}	
+
+#banner3{
+	position: fixed;
+	right: 5px;
+	bottom: 33%;
+	font-family: 'Deutsch Gothic';
+	font-size: 36px;
+	background-color: lime;
+	width: : 50%;
+}	
+
+
 
     </style>
    
 <script>
-
-setTimeout(function(){
-document.getElementById('dream').style.visibility = "visible";
-},8000);
-
-setTimeout(function(){
-document.getElementById('dream').style.visibility = "hidden";
-},9000);
-
-setTimeout(function(){
-document.getElementById('dream').style.visibility = "visible";
-},15000);
-
-
-setTimeout(function(){
-document.getElementById('dream').style.visibility = "hidden";
-},20000);
-
-setTimeout(function(){
-document.getElementById('dream').style.visibility = "visible";
-},32000);
-
-setTimeout(function(){
-document.getElementById('dream').style.visibility = "hidden";
-},33000);
-
-setTimeout(function(){
-document.getElementById('dream').style.visibility = "visible";
-},38000);
-
-setTimeout(function(){
-document.getElementById('dream').style.visibility = "hidden";
-},39000);
-
-
-
-setTimeout(function(){
-document.getElementById('dream2').style.visibility = "visible";
-},10000);
-
-setTimeout(function(){
-document.getElementById('dream2').style.visibility = "hidden";
-},14000);
-
-setTimeout(function(){
-document.getElementById('dream2').style.visibility = "visible";
-},19000);
-
-
-setTimeout(function(){
-document.getElementById('dream2').style.visibility = "hidden";
-},20000);
-
-setTimeout(function(){
-document.getElementById('dream2').style.visibility = "visible";
-},16000);
-
-setTimeout(function(){
-document.getElementById('dream2').style.visibility = "hidden";
-},33000);
-
-setTimeout(function(){
-document.getElementById('dream2').style.visibility = "visible";
-},35000);
-
-setTimeout(function(){
-document.getElementById('dream2').style.visibility = "hidden";
-},36000);
-
-
-
-
-
-setTimeout(function(){
-document.getElementById('dream3').style.visibility = "visible";
-},14000);
-
-setTimeout(function(){
-document.getElementById('dream3').style.visibility = "hidden";
-},15000);
-
-setTimeout(function(){
-document.getElementById('dream3').style.visibility = "visible";
-},23000);
-
-
-setTimeout(function(){
-document.getElementById('dream3').style.visibility = "hidden";
-},26000);
-
-setTimeout(function(){
-document.getElementById('dream3').style.visibility = "visible";
-},36000);
-
-setTimeout(function(){
-document.getElementById('dream3').style.visibility = "hidden";
-},40000);
-
-setTimeout(function(){
-document.getElementById('dream3').style.visibility = "visible";
-},60000);
-
-setTimeout(function(){
-document.getElementById('dream3').style.visibility = "hidden";
-},70000);
-
-
-
-
-
-
   
 setTimeout(function(){
 document.getElementById('pop').style.visibility = "visible";
@@ -1859,7 +1725,7 @@ document.getElementById('pop43').style.visibility = "hidden";
 
 setTimeout(function(){
 document.getElementById('pop44').style.visibility = "visible";
-},16000)
+},19000)
 
 setTimeout(function(){
 document.getElementById('pop45').style.visibility = "visible";
@@ -1964,6 +1830,11 @@ setTimeout(function(){
 document.getElementById('pop62').style.visibility = "visible";
 },89000)
 
+setTimeout(function(){
+document.getElementById('pop63').style.visibility = "visible";
+},1000)
+
+
 
 setTimeout(function(){
 document.getElementById('pop1a').style.visibility = "visible";
@@ -2034,23 +1905,349 @@ document.getElementById('disco').style.visibility = "visible";
 },45000)
 
 
-function closeSelf(){
+
+
+
+setTimeout(function(){
+document.getElementById('pop').style.visibility = "visible";
+},19000);
+
+setTimeout(function(){
+document.getElementById('pop').style.visibility = "hidden";
+},15000);
+	
+setTimeout(function(){
+document.getElementById('pop2').style.visibility = "visible";
+},19000);
+
+setTimeout(function(){
+document.getElementById('pop2').style.visibility = "hidden";
+},15000);
+
+
+setTimeout(function(){
+document.getElementById('pop5').style.visibility = "hidden";
+},15000)
+
+setTimeout(function(){
+document.getElementById('pop5').style.visibility = "visible";
+},19000)
+
+setTimeout(function(){
+document.getElementById('pop10').style.visibility = "visible";
+},19000)
+
+setTimeout(function(){
+document.getElementById('pop10').style.visibility = "hidden";
+},15000)
+
+setTimeout(function(){
+document.getElementById('pop11').style.visibility = "visible";
+},19000)
+
+setTimeout(function(){
+document.getElementById('pop11').style.visibility = "hidden";
+},15000)
+
+setTimeout(function(){
+document.getElementById('pop12').style.visibility = "visible";
+},19000)
+
+setTimeout(function(){
+document.getElementById('pop12').style.visibility = "hidden";
+},15000)
+
+
+setTimeout(function(){
+document.getElementById('pop31').style.visibility = "visible";
+},19000)
+
+setTimeout(function(){
+document.getElementById('pop31').style.visibility = "hidden";
+},15000)
+
+setTimeout(function(){
+document.getElementById('pop32').style.visibility = "visible";
+},19000)
+
+setTimeout(function(){
+document.getElementById('pop32').style.visibility = "hidden";
+},15000)
+
+
+setTimeout(function(){
+document.getElementById('pop33').style.visibility = "visible";
+},19000)
+
+setTimeout(function(){
+document.getElementById('pop33').style.visibility = "hidden";
+},15000)
+
+setTimeout(function(){
+document.getElementById('pop42').style.visibility = "hidden";
+},15000)
+
+setTimeout(function(){
+document.getElementById('pop42').style.visibility = "visible";
+},19000)
+
+setTimeout(function(){
+document.getElementById('pop43').style.visibility = "visible";
+},19000)
+
+setTimeout(function(){
+document.getElementById('pop43').style.visibility = "hidden";
+},15000)
+
+setTimeout(function(){
+document.getElementById('pop63').style.visibility = "hidden";
+},15000)
+
+setTimeout(function(){
+document.getElementById('pop63').style.visibility = "visible";
+},19000)
+
+setTimeout(function(){
+document.getElementById('pop1a').style.visibility = "hidden";
+},15000)
+
+setTimeout(function(){
+document.getElementById('pop1a').style.visibility = "visible";
+},19000)
+
+setTimeout(function(){
+document.getElementById('pop2a').style.visibility = "hidden";
+},15000)
+
+setTimeout(function(){
+document.getElementById('pop2a').style.visibility = "visible";
+},19000)
+
+setTimeout(function(){
+document.getElementById('pop3a').style.visibility = "hidden";
+},15000)
+
+setTimeout(function(){
+document.getElementById('pop3a').style.visibility = "visible";
+},19000)
+
+setTimeout(function(){
+document.getElementById('pop4a').style.visibility = "hidden";
+},15000)
+
+setTimeout(function(){
+document.getElementById('pop4a').style.visibility = "visible";
+},19000)
+
+setTimeout(function(){
+document.getElementById('pop1b').style.visibility = "hidden";
+},15000)
+
+setTimeout(function(){
+document.getElementById('pop1b').style.visibility = "visible";
+},19000)
+
+setTimeout(function(){
+document.getElementById('pop5a').style.visibility = "hidden";
+},15000)
+
+setTimeout(function(){
+document.getElementById('pop5a').style.visibility = "visible";
+},19000)
+
+setTimeout(function(){
+document.getElementById('pophoofd').style.visibility = "hidden";
+},15000)
+
+setTimeout(function(){
+document.getElementById('pophoofd').style.visibility = "visible";
+},19000)
+
+setTimeout(function(){
+document.getElementById('banner1').style.visibility = "visible";
+},6302)
+
+setTimeout(function(){
+document.getElementById('banner2').style.visibility = "visible";
+},32569)
+
+setTimeout(function(){
+document.getElementById('banner3').style.visibility = "visible";
+},59321)
+
+setTimeout(function(){
+document.getElementById('banner1').style.visibility = "hidden";
+},15000)
+
+setTimeout(function(){
+document.getElementById('banner2').style.visibility = "hidden";
+},15000)
+
+setTimeout(function(){
+document.getElementById('banner3').style.visibility = "hidden";
+},15000)
+
+
+setTimeout(function(){
+document.getElementById('banner1').style.visibility = "visible";
+},16000)
+
+setTimeout(function(){
+document.getElementById('banner2').style.visibility = "visible";
+},16000)
+
+setTimeout(function(){
+document.getElementById('banner3').style.visibility = "visible";
+},16000)
+
+
+
+
+setTimeout(function(){
+document.getElementById('pop1a').style.visibility = "visible";
+},1000)
+
+setTimeout(function(){
+document.getElementById('pop2a').style.visibility = "visible";
+},5000)
+
+setTimeout(function(){
+document.getElementById('pop3a').style.visibility = "visible";
+},7000)
+
+setTimeout(function(){
+document.getElementById('pop4a').style.visibility = "visible";
+},500)
+
+setTimeout(function(){
+document.getElementById('pop1b').style.visibility = "visible";
+},10000)
+
+setTimeout(function(){
+document.getElementById('pop5a').style.visibility = "visible";
+},13000)
+
+setTimeout(function(){
+document.getElementById('pophoofd').style.visibility = "visible";
+},13480)
+
+setTimeout(function(){
+document.getElementById('palmboom').style.visibility = "visible";
+},20000)
+
+setTimeout(function(){
+document.getElementById('rainbow').style.visibility = "visible";
+},24000)
+
+setTimeout(function(){
+document.getElementById('rainbow').style.visibility = "hidden";
+},29000)
+
+setTimeout(function(){
+document.getElementById('shark').style.visibility = "visible";
+},32000)
+
+setTimeout(function(){
+document.getElementById('shark').style.visibility = "hidden";
+},32100)
+
+setTimeout(function(){
+document.getElementById('shark').style.visibility = "visible";
+},32200)
+
+setTimeout(function(){
+document.getElementById('shark').style.visibility = "hidden";
+},32300)
+
+setTimeout(function(){
+document.getElementById('shark').style.visibility = "visible";
+},32300)
+
+setTimeout(function(){
+document.getElementById('shark').style.visibility = "hidden";
+},32400)
+
+setTimeout(function(){
+document.getElementById('disco').style.visibility = "visible";
+},45000)
+
+
+
+/*
+	function closeSelf(){
     self.close();
     return true;
 }
+*/
+
 
 
 </script>
 
+<script>
+var shutdownEngaged = $("#scratch")[0];
+$("#scratch2")
+.mouseenter(function() {
+shutdownEngaged.play();
+});
+</script>
+
+<script>
+	
+	$( document ).ready(function() {
+    	
+    	$( 'input[type="submit"],.beeld1,.beeld2').click(function() {
+        	$(this).parent().parent().hide();
+        	return false;
+    	}); 
+    	
+    	
+    	
+	    makeDiv();
+	
+	    function makeDiv() {
+	        var numRand = Math.floor(Math.random());
+	        var divsize = 200;
+	        var posx = (Math.random() * ($('body').width() - divsize)).toFixed();
+	        var posy = (Math.random() * (900 - divsize)).toFixed();
+	        
+	        //alert(posy);
+				        
+	        $newdiv = $("<div class='dream' id='dream'><a href='SAM2.html'><img src='./assets/dreamknop.gif'></a></div>").css({
+	            'left': posx + 'px',
+	            'top': posy + 'px'
+	        });
+	        $newdiv.appendTo('body').delay(1000).fadeIn(100, function () {
+	            $(this).remove();
+	            makeDiv();
+	        });
+	    }	
+	    	
+	    	
+	    	
+	    	
+
+	    
+	   	
+    	
+    	
+    	
+	});
+	
+	
+
+
+
+</script>
+
+
 </head>
 
 <body> 
-<div id="dream" style="visibility: hidden;"><a href="SAM2.html"><img src="./assets/dreamknop.gif"></a></div>
-<div id="dream2" style="visibility: hidden;"><a href="SAM2.html"><img src="./assets/dreamknop.gif"></a></div>
-<div id="dream3" style="visibility: hidden;"><a href="SAM2.html"><img src="./assets/dreamknop.gif"></a></div>
+<!--<div class="dream" id="dream"><a href="SAM2.html"><img src="./assets/dreamknop.gif"></a></div>-->
 
 
-
+ 
 <div id="muziek">
 <audio autoplay>
 <source src="./assets/VoicesBrazil.mp3/" type="audio/mpeg">
@@ -2139,6 +2336,7 @@ what's your favorite band?</font><input type="text" name="name">
 </form>
 </div>
 
+
 <div id="pop7" style="visibility:hidden;">
 	<button id="close" onclick="document.getElementById('pop').style.display='none'">X</button>
 	<form method="post" enctype="text/plain"><font>
@@ -2165,8 +2363,10 @@ What's your job?</font><br><input type="text" name="name">
 </form>
 </div>
 
+<div id="img"><img src="./assets/peekaboo.gif" class="greydout" width="200" height="100"></div>
+
 <div id="pop11" style="visibility:hidden;">
-	<button id="close" onclick="document.getElementById('pop').style.display='none'">X</button>
+	<button id="close" onclick="document.getElementById('pop').style.display='none'">XTTTT</button>
 	<form method="post" enctype="text/plain"><font>
 Do you smoke?</font><br><input type="text" name="name">
 <input type="submit" value="Send">
@@ -2189,6 +2389,11 @@ What's your mom's name?</font><br><input type="text" name="name">
 </form>
 </div>
 
+<div id="img2"><img src="./assets/see.gif" class="greydout" width="200" height="100"></div>
+
+<div id="disco" style="visibility: hidden;">
+	<img src="./assets/discobal.gif"> </div>
+	
 <div id="pop14" style="visibility:hidden;">
 	<button id="close" onclick="document.getElementById('pop').style.display='none'">X</button>
 	<form method="post" enctype="text/plain"><font>
@@ -2197,6 +2402,9 @@ What's your dad's name?</font><br><input type="text" name="name">
 </form>
 </div>
 
+<div id="palmboom" style="visibility: hidden;">
+<img src="./assets/palmtree.jpg.jpg" width="300" height="200"> </div>
+
 <div id="pop15" style="visibility:hidden;">
 	<button id="close" onclick="document.getElementById('pop').style.display='none'">X</button>
 	<form method="post" enctype="text/plain"><font>
@@ -2204,6 +2412,8 @@ Do you have allergies?</font><br><input type="text" name="name">
 <input type="submit" value="Send">
 </form>
 </div>
+
+<div id="img3"><img src="./assets/fist.gif" class="greydout" height="150px" width="180px"></div>
 
 <div id="pop16" style="visibility:hidden;">
 	<button id="close" onclick="document.getElementById('pop').style.display='none'">X</button>
@@ -2229,6 +2439,7 @@ What's your shoe size?</font><input type="text" name="name">
 </form>
 </div>
 
+<div id="img4"><img src="./assets/blink.gif" class="greydout"></div>
 
 <div id="pop19" style="visibility:hidden;">
 	<button id="close" onclick="document.getElementById('pop').style.display='none'">X</button>
@@ -2238,6 +2449,7 @@ How much do you weigh?</font><input type="text" name="name">
 </form>
 </div>
 
+
 <div id="pop20" style="visibility:hidden;">
 	<button id="close" onclick="document.getElementById('pop').style.display='none'">X</button>
 	<form method="post" enctype="text/plain"><font>
@@ -2245,6 +2457,7 @@ Do you drink alcohol?</font><input type="text" name="name">
 <input type="submit" value="Send">
 </form>
 </div>
+
 
 <div id="pop21" style="visibility:hidden;">
 	<button id="close" onclick="document.getElementById('pop').style.display='none'">X</button>
@@ -2262,6 +2475,10 @@ Do you like pickles?</font><input type="text" name="name">
 </form>
 </div>
 
+<div id="pop1b" style="visibility:hidden;">
+	<img src="./assets/azk17-glitter-hearts-ani.gif" width="700px" height="600px">
+	</div>
+	
 <div id="pop23" style="visibility:hidden;">
 	<button id="close" onclick="document.getElementById('pop').style.display='none'">X</button>
 	<form method="post" enctype="text/plain"><font>
@@ -2312,6 +2529,8 @@ Are you happy?</font><br><input type="text" name="name">
 </form>
 </div>
 
+<marquee id="banner3" behavior="scroll" direction="right" scrollamount="20" style="visibility: hidden;">Heeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeey!</marquee>
+
 <div id="pop29" style="visibility:hidden;">
 	<button id="close" onclick="document.getElementById('pop').style.display='none'">X</button>
 	<form method="post" enctype="text/plain"><font>
@@ -2343,6 +2562,7 @@ Do you have a mental disease?</font><input type="text" name="name">
 <input type="submit" value="Send">
 </form>
 </div>
+
 
 <div id="pop22" style="visibility:hidden;">
 	<button id="close" onclick="document.getElementById('pop').style.display='none'">X</button>
@@ -2419,10 +2639,10 @@ What's your favorite smell?</font><br><input type="text" name="name">
 </div>
 
 <div id="pop31" style="visibility:hidden;">
-	<button id="close" onclick="document.getElementById('pop').style.display='none'">X</button>
-	<form method="post" enctype="text/plain"><font>
+	<button id="close">X</button>
+	<form><font>
 What are you wearing?</font><input type="text" name="name">
-<input type="submit" value="Send">
+<input type="submit" value="Send" class="closer">
 </form>
 </div>
 
@@ -2434,6 +2654,10 @@ Are you cold?</font><input type="text" name="name">
 </form>
 </div>
 
+<div id="pop2a" style="visibility:hidden;">
+	<img src="./assets/vuist2.gif">
+	</div>
+	
 <div id="pop33" style="visibility:hidden;">
 	<button id="close" onclick="document.getElementById('pop').style.display='none'">X</button>
 	<form method="post" enctype="text/plain"><font>
@@ -2515,6 +2739,8 @@ Do you make friends easily?</font><input type="text" name="name">
 <input type="submit" value="Send">
 </form>
 </div>
+
+<marquee id="banner1" behavior="scroll" direction="left" scrollamount="20" style="visibility: hidden;">Do you complain a lot?</marquee>
 
 <div id="pop43" style="visibility:hidden;">
 	<button id="close" onclick="document.getElementById('pop').style.display='none'">X</button>
@@ -2598,6 +2824,10 @@ Do you stick to the rules?</font><br><input type="text" name="name">
 </form>
 </div>
 
+<div id="pop5a" style="visibility:hidden;">
+	<img src="./assets/BTarrxroc2.gif">
+	</div>
+
 <div id="pop53" style="visibility:hidden;">
 	<button id="close" onclick="document.getElementById('pop').style.display='none'">X</button>
 	<form method="post" enctype="text/plain"><font>
@@ -2615,7 +2845,7 @@ Are you always busy?</font><input type="text" name="name">
 </div>
 
 <div id="pop55" style="visibility:hidden;">
-	<button id="close" onclick="document.getElementById('pop').style.display='none'">X</button>
+	<button id="close" onclick="document.getElementById('pop').style.display='none'">X44444</button>
 	<form method="post" enctype="text/plain"><font>
 Are you excited often?</font><input type="text" name="name">
 <input type="submit" value="Send">
@@ -2680,7 +2910,17 @@ Do you have good intentions?</font><br><input type="text" name="name">
 </form>
 </div>
 
+<div id="pop63" style="visibility:hidden;">
+	<button id="close" onclick="document.getElementById('pop').style.display='none'">X</button>
+	<font>Choose one:</font>
 
+	<div>
+		<img src="./assets/island.jpg" width="100px" height="75px" class="beeld1">
+		<img src="./assets/swamp.jpg" width="100px" height="75px" class="beeld2">
+	</div>
+</div>
+
+<marquee id="banner2" behavior="scroll" srollamount="20" direction="up" style="visibility: hidden;"><font>I<br>s<br> <br>t<br>h<br>i<br>s<br> <br>a<br>n<br>n<br>o<br>y<br>i<br>n<br>g<br> <br>?<br></font></marquee>
 
 
 
@@ -2688,17 +2928,6 @@ Do you have good intentions?</font><br><input type="text" name="name">
 	<img src="./assets/nee.gif">
 	</div>
 	
-<div id="pop5a" style="visibility:hidden;">
-	<img src="./assets/BTarrxroc2.gif">
-	</div>
-	
-<div id="pop2a" style="visibility:hidden;">
-	<img src="./assets/vuist2.gif">
-	</div>
-	
-<div id="pop1b" style="visibility:hidden;">
-	<img src="./assets/azk17-glitter-hearts-ani.gif">
-	</div>
 
 <div id="pop3a" style="visibility:hidden;">
 	<img src="./assets/cars06.gif">
@@ -2712,11 +2941,9 @@ Do you have good intentions?</font><br><input type="text" name="name">
 <div id="pophoofd" style="visibility: hidden;">
 	<img src="./assets/pophoofd2.png" height="150" width="125"> </div>
 	
-<div id="masker" style="visibility: hidden;">
-	<img src="./assets/masker.png" height="50" width="50"> </div>
 	
 <div id="rainbow" style="visibility: hidden;">
-	<img src="./assets/rainbow-05.png"> </div>
+	<img src="./assets/rainbow-05.png" width="200" height="100"> </div>
 
 <div id="shark" style="visibility: hidden;">
 	<img src="./assets/shark.png" height="500" width="400"> </div>
@@ -2724,6 +2951,9 @@ Do you have good intentions?</font><br><input type="text" name="name">
 <div id="disco" style="visibility: hidden;">
 	<img src="./assets/discobal.gif"> </div>
 	
+<div id="palmboom" style="visibility: hidden;">
+<img src="./assets/palmtree.jpg.jpg" width="300" height="200"> </div>
+
 
 </body>
 
